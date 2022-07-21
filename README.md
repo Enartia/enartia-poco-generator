@@ -1,6 +1,8 @@
 # enartia-poco-generator
 A Plain Old CLR Objects (POCO) is a class, which doesn't depend on any framework-specific base class. It is like any other normal .NET class. Due to this, they are called Plain Old CLR Objects. These POCO entities (also known as persistence-ignorant objects) support most of the same LINQ queries as Entity Object derived entities. These classes (POCO classes) implements only the domain business logic of the Application.
 
+Source Code Url: https://www.codeproject.com/Articles/892233/POCO-Generator
+
 Introduction
 
 There are plenty of ways to generate POCO classes from a database. The hard way is to handwrite them. This may be good for introductory/one-or-two classes scenarios, but is not applicable for production. There are codegen tools, like CodeSmith. The tool detects changes to the database and generates the appropriate POCO classes. There are script tools like T4 (Text Template Transformation Toolkit), which Visual Studio supports. The solution that I opt to create is a visual-centric stand-alone application, the POCO Generator, that traverses the SQL Server, and generates POCOs from various data objects. There are 5 types of database objects that the POCO Generator can handle:
